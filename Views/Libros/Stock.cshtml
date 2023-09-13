@@ -1,0 +1,86 @@
+﻿@model IEnumerable<Biblioteca_MVC.Models.Libro>
+
+@{
+    ViewData["Title"] = "Stock";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1 class="text-center">Stock</h1>
+
+<div class="d-flex align-items-center justify-content-between">
+<form asp-controller="Libros" asp-action="Stock" class="" d-flex align-items-center">
+    <p>
+        Buscar título o autor:
+        <br />
+        <input type="text" name="buscar" class="form-text busqueda" />
+        <input type="submit" value="Buscar" class="btn btn-sm btn-dark" />
+    </p>
+</form>
+    <div class="justify-content-end">
+        <a class="btn btn-sm btn-dark" asp-action="Create">Agregar libro a stock</a>
+    </div>
+</div>
+
+
+<h3>Libros en stock</h3>
+<table class="tabla">
+    <thead>
+        <tr>
+            <th>
+                <a style="all:unset" asp-action="Stock" asp-route-filtro="@ViewData["FiltroNombre"]">
+                    @Html.DisplayNameFor(model => model.Titulo)
+                </a>
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Autor)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CantPaginas)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PrecioCompra)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PrecioAlquiler)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Alquilado)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+
+@if ( Model != null ) {
+    @foreach (var item in Model) {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Titulo)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Autor)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CantPaginas)
+                </td>
+                <td>
+                    $@Html.DisplayFor(modelItem => item.PrecioCompra)
+                </td>
+                <td>
+                    $@Html.DisplayFor(modelItem => item.PrecioAlquiler)
+                </td>
+
+                <td>
+                    @Html.DisplayFor(modelItem => item.Alquilado)
+                </td>
+                <td>
+                        <a class="btn btn-sm btn-dark" asp-action="Vender" asp-route-id="@item.ISBN" class="btn btn-sm btn-dark">Vender</a> |
+                        <a class="btn btn-sm btn-dark" asp-action="Edit" asp-route-id="@item.ISBN" class="btn btn-sm btn-dark">Editar</a> |
+                        <a class="btn btn-sm btn-dark" asp-action="Details" asp-route-id="@item.ISBN">Información</a> |
+                        <a class="btn btn-sm btn-dark" asp-action="Delete" asp-route-id="@item.ISBN">Eliminar</a>
+                </td>
+            </tr>
+    }
+}
+    </tbody>
+</table>

@@ -1,0 +1,85 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Biblioteca_MVC
+build_property.RootNamespace = Biblioteca_MVC
+build_property.ProjectDir = C:\Users\sebas\source\repos\Biblioteca_MVC\Biblioteca_MVC\
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\sebas\source\repos\Biblioteca_MVC\Biblioteca_MVC
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/sebas/source/repos/Biblioteca_MVC/Biblioteca_MVC/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sebas/source/repos/Biblioteca_MVC/Biblioteca_MVC/Views/Libros/Alquilados.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGlicm9zXEFscXVpbGFkb3MuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sebas/source/repos/Biblioteca_MVC/Biblioteca_MVC/Views/Libros/ConfirmarVenta.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGlicm9zXENvbmZpcm1hclZlbnRhLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sebas/source/repos/Biblioteca_MVC/Biblioteca_MVC/Views/Libros/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGlicm9zXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sebas/source/repos/Biblioteca_MVC/Biblioteca_MVC/Views/Libros/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGlicm9zXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sebas/source/repos/Biblioteca_MVC/Biblioteca_MVC/Views/Libros/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGlicm9zXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sebas/source/repos/Biblioteca_MVC/Biblioteca_MVC/Views/Libros/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGlicm9zXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sebas/source/repos/Biblioteca_MVC/Biblioteca_MVC/Views/Libros/Estadisticas.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGlicm9zXEVzdGFkaXN0aWNhcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sebas/source/repos/Biblioteca_MVC/Biblioteca_MVC/Views/Libros/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGlicm9zXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sebas/source/repos/Biblioteca_MVC/Biblioteca_MVC/Views/Libros/Solicitar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGlicm9zXFNvbGljaXRhci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sebas/source/repos/Biblioteca_MVC/Biblioteca_MVC/Views/Libros/Stock.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGlicm9zXFN0b2NrLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sebas/source/repos/Biblioteca_MVC/Biblioteca_MVC/Views/Libros/Vender.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGlicm9zXFZlbmRlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sebas/source/repos/Biblioteca_MVC/Biblioteca_MVC/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sebas/source/repos/Biblioteca_MVC/Biblioteca_MVC/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sebas/source/repos/Biblioteca_MVC/Biblioteca_MVC/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sebas/source/repos/Biblioteca_MVC/Biblioteca_MVC/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sebas/source/repos/Biblioteca_MVC/Biblioteca_MVC/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-urur5z9gvl

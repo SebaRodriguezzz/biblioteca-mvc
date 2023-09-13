@@ -1,0 +1,86 @@
+﻿@model IEnumerable<Biblioteca_MVC.Models.Libro>
+
+@{
+    ViewData["Title"] = "Alquilados";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1 class="text-center">Alquilados</h1>
+
+<form asp-controller="Libros" asp-action="Alquilados">
+    <p>
+        Buscar título o autor:
+        <br />
+        <input type="text" name="buscar" class="form-text busqueda" />
+        <input type="submit" value="Buscar" class="btn btn-sm btn-dark" />
+    </p>
+</form>
+
+<h3>Libros alquilados</h3>
+<table class="tabla">
+    <thead>
+        <tr>
+            <th>
+                <a style="all:unset" asp-action="Alquilados" asp-route-filtro="@ViewData["FiltroNombre"]">
+                @Html.DisplayNameFor(model => model.Titulo)
+                </a>
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Autor)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CantPaginas)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PrecioCompra)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PrecioAlquiler)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Alquilado)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FechaDevolucionEnDias)
+            </th>
+            <th class="opciones"></th>
+        </tr>
+    </thead>
+    <tbody>
+
+        @if (Model != null)
+        {
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Titulo)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Autor)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.CantPaginas)
+                    </td>
+                    <td>
+                        $@Html.DisplayFor(modelItem => item.PrecioCompra)
+                    </td>
+                    <td>
+                        $@Html.DisplayFor(modelItem => item.PrecioAlquiler)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Alquilado)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.FechaDevolucionEnDias)
+                    </td>
+                    <td>
+                        <a class="btn btn-sm btn-dark" asp-action="Edit" asp-route-id="@item.ISBN" class="btn btn-sm btn-dark">Editar</a> |
+                        <a class="btn btn-sm btn-dark" asp-action="Details" asp-route-id="@item.ISBN">Información</a> |
+                        <a class="btn btn-sm btn-dark" asp-action="Delete" asp-route-id="@item.ISBN">Eliminar</a>
+                    </td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>

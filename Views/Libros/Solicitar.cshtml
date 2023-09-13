@@ -1,0 +1,53 @@
+﻿@model IEnumerable<Biblioteca_MVC.Models.Libro>
+
+@{
+    ViewData["Title"] = "Solicitar libros";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1 class="text-center">Solicitar libros a proveedor</h1>
+
+<form class="formulario" method="post" action="@Url.Action("Solicitar", "Libros")">
+    <div>
+        <label class="control-label" for="mail">E-mail del proveedor:</label>
+        <input class="form-control" type="email" name="mail" id="mail" required/>
+    </div>
+    <div>
+        <label class ="control-label" for="ISBN">ISBN del libro:</label>
+        <input class="form-control" type="text" name="ISBN" id="ISBN" />
+        <button class="btn btn-sm btn-dark" type="button" onclick="agregarLibro()">Agregar</button>
+    </div>
+    <br />
+    <div id="listaLibros">
+        <p>Libros a solicitar: </p>
+    </div>
+    <br />
+    <div>
+        <label class="control-label" for="comentarios">Comentarios:</label>
+        <textarea class="form-control" name="comentarios" id="comentarios"></textarea>
+    </div>
+    <div>
+        <input class="btn btn-sm btn-dark" type="submit" onclick="confirmarSolicitud()" value="Enviar" />
+    </div>
+</form>
+
+<script>
+
+    function agregarLibro() {
+        var isbn = document.getElementById('ISBN').value;
+        if (isbn.trim() !== '') {
+            var listaLibros = document.getElementById('listaLibros');
+            var item = document.createElement('span');
+            item.textContent = " - " + isbn;
+            listaLibros.appendChild(item);
+        }
+        document.getElementById('ISBN').value = '';
+    }
+
+    function confirmarSolicitud(){
+        var mail = document.getElementById('mail').value;
+        var isbnList = document.getElementById('listaLibros').textContent;
+        var mensaje = "Has solicitado correctamente los libros al proveedor de email: " + mail + "." + isbnList;
+        window.alert(mensaje);
+    }
+</script>

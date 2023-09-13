@@ -1,0 +1,18 @@
+﻿@model Biblioteca_MVC.Models.Libro
+
+@{
+    ViewData["Title"] = "ConfirmarVenta";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Libro vendido correctamente</h1>
+
+<div>
+    <hr />
+    <div>
+        <p>El libro @Html.DisplayFor(model => model.Titulo) ha sido vendido correctamente a un precio de $@Html.DisplayFor(model => model.PrecioCompra)</p>
+    </div>
+</div>
+<div>
+    <a class="btn btn-sm btn-dark" asp-action="Stock">Volver a la lista</a>
+</div>
